@@ -1,12 +1,93 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,200&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=Poppins:ital,wght@0,200;0,300;1,100;1,200&family=Rubik&family=Work+Sans&display=swap');
 
-button{
-    color: #27aedb;
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F1F5F8;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main h1
+{
+    margin-top: 20px;
+    border-bottom: 5px solid #C59D60;
+}
+
+.buttons
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttons button
+{
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: #E5C48F;
+}
+
+.card-container
+{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+.card
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card img
+{
+    width: 200px;
+    border: 5px solid #E5C48F;
+}
+
+.right
+{
+    align-self: flex-start;
+}
+
+.top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px dotted black;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+}
+
+#price
+{
+    color: #ecaf4e;
+}
+
+#desc
+{
+    color: #8491A7;
 }
